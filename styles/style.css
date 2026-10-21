@@ -137,7 +137,7 @@
 }
 
 .filter-rainbow {
-  filter: saturate(1.7%);
+  filter: saturate(1.7);
 }
 
 .card__text {
