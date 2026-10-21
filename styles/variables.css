@@ -1,1 +1,15 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+--font-main: 'Inter-Variable', sans-serif;
+--font-accent: 'PressStart2P', monospace;
+--color: #000;
+--main-font-weight: 400;
+--title-font-weight: 785;
+--background-image: 
+   repeating-linear-gradient(to right,#d3d3d3 0 2px, transparent 2px 4px),
+   repeating-linear-gradient(to top,#d3d3d3 0 2px, transparent 2px 4px),
+   linear-gradient(to bottom,#e7e7e7,#1a1a1a);
+--width: clamp(375px, 50vw, 700px);
+--border: 2px solid #000;
+--main-color: #fff;
+--animation-fill-color: #FF0000;
+}
