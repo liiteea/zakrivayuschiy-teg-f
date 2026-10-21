@@ -72,7 +72,7 @@
   line-height: 20px;
 }
 
-.card__image_label {
+.card__image-label {
   position: relative;
 }
 
@@ -108,34 +108,35 @@
   border-block: 2px solid var(--color);
 }
 
-.card__image_sunny {
+.card__image-sunny {
   filter: brightness(115%);
 }
 
-.card__image_thunder {
+.card__image-thunder {
   filter: grayscale(0.8);
 }
 
-.card__image_art {
+.card__image-art {
   filter: grayscale(0.6) contrast(1.2) brightness(0.8);
 }
 
-.card__image_cloudy {
+.card__image-cloudy {
   filter: opacity(0.8);
 }
-.card__image_video {
+
+.card__image-video {
   filter: contrast(70%);
 }
 
-.card__image_rainy {
+.card__image-rainy {
   filter: sepia(1.5);
 }
 
-.card__image_theme {
+.card__image-theme {
   filter: hue-rotate(30deg);
 }
 
-.card__image_rainbow {
+.card__image-rainbow {
   filter: saturate(170%);
 }
 
@@ -144,7 +145,7 @@
   line-height: 21px;
 }
 
-.card__image_label + .card__text {
+.card__image-label + .card__text {
   padding-block-start: 25px;
 }
 
@@ -256,7 +257,7 @@
   mix-blend-mode: difference;
 }
 
-.save__button {
+.button__save {
   position: relative;
   display: flex;
   align-items: center;
@@ -269,11 +270,12 @@
   padding: 15px 20px;
   background-color: var(--main-color);
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 @media (width <= 375px) {
 
-  .save__button {
+  .button__save {
     flex-direction: column;
     padding: 17px 20px;
   }
@@ -286,12 +288,12 @@
 
 .card__icon-button:focus,
 .card__like-button:focus,
-.save__button:focus,
+.button__save:focus,
 .dialog__button:focus {
   outline: none;
 } 
 
-.save__button:focus-visible, 
+.button__save:focus-visible, 
 .card__like-button:focus-visible,
 .dialog__button:focus-visible {
   box-shadow: 2px 2px 0 var(--color);
@@ -302,7 +304,7 @@
 }
 
 .card__like-button::before, 
-.save__button::before,
+.button__save::before,
 .dialog__button::before {
   content: '';
   position: absolute;
@@ -314,7 +316,7 @@
 }
 
 .card__like-button:hover::before,
-.save__button:hover::before,
+.button__save:hover::before,
 .dialog__button:hover::before {
   transform: scaleX(1);
 }
@@ -326,7 +328,7 @@
   color: var(--main-color);
 }
 
-dialog {
+.dialog {
   display: none;
   padding: 30px;
   border: var(--border);
@@ -335,14 +337,14 @@ dialog {
   block-size: 191px;
 }
 
-dialog[open] {
+.dialog[open] {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 30px 20px;
   align-items: center;
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
@@ -361,6 +363,7 @@ dialog::backdrop {
   grid-column: 1 / -1;
   inline-size: clamp(261px, calc(249.73px + 3.00vw), 293px);
   block-size: 38px;
+  transition: box-shadow 0.3s ease;
 }
 
 .dialog__icon {
