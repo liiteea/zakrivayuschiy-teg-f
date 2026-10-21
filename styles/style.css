@@ -108,36 +108,36 @@
   border-block: 2px solid var(--color);
 }
 
-.card__image-sunny {
-  filter: brightness(115%);
+.filter-sunny {
+  filter: brightness(1.15);
 }
 
-.card__image-thunder {
+.filter-thunder {
   filter: grayscale(0.8);
 }
 
-.card__image-art {
+.filter-art {
   filter: grayscale(0.6) contrast(1.2) brightness(0.8);
 }
 
-.card__image-cloudy {
+.filter-cloudy {
   filter: opacity(0.8);
 }
 
-.card__image-video {
-  filter: contrast(70%);
+.filter-video {
+  filter: contrast(0.7);
 }
 
-.card__image-rainy {
+.filter-rainy {
   filter: sepia(1.5);
 }
 
-.card__image-theme {
+.filter-theme {
   filter: hue-rotate(30deg);
 }
 
-.card__image-rainbow {
-  filter: saturate(170%);
+.filter-rainbow {
+  filter: saturate(1.7%);
 }
 
 .card__text {
