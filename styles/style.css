@@ -47,6 +47,7 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
 }
 
 .card {
@@ -360,10 +361,13 @@
   position: relative;
   border: var(--border);
   background-color: var(--main-color);
-  grid-column: 1 / -1;
   inline-size: clamp(261px, calc(249.73px + 3.00vw), 293px);
   block-size: 38px;
   transition: box-shadow 0.3s ease;
+}
+
+.dialog form {
+  grid-column: 1 / -1;
 }
 
 .dialog__icon {
